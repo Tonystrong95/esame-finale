@@ -17,20 +17,12 @@ export async function createAlbum(req, res) {
   let db = await readDb();
   let keys = Object.keys(req.body);
 
-  if (keys.length === 3 && !(await nameExsist(req.body.name))) {
+  if (keys.length === 2 && !(await nameExsist(req.body.name))) {
     console.log("entrato nel primo if");
     let album = {
       id: index,
       name: req.body.name,
-      photo: [
-        {
-          id: index,
-          name: req.body.photo.name,
-          creationData: new Date(),
-          modifyDate: null,
-          hashtags: req.body.photo.hashtags,
-        },
-      ],
+      photo: [],
       hashtags: req.body.hashtags,
       creationData: new Date(),
       modifyDate: null,
