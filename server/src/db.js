@@ -121,7 +121,7 @@ export async function editAlbum(req, res) {
       if (db.photoazon[i].id === parseInt(req.params.id)) {
         db.photoazon[i].name = req.body.name;
         db.photoazon[i].hashtags = req.body.hashtags;
-
+        db.photoazon[i].modifyDate = new Date();
         break;
       }
     }
