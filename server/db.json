@@ -1,0 +1,27 @@
+{
+  "photoazon": [
+    {
+      "id": 1,
+      "name": "1984",
+      "photo": [
+        {
+          "id": 1,
+          "name": " photos",
+          "creationData": "2024-03-29T14:50:44.814Z",
+          "modifyDate": null,
+          "hashtags": "that photos"
+        },
+        {
+          "id": 2,
+          "name": "viva la vita",
+          "creationData": "2024-03-29T14:54:10.742Z",
+          "modifyDate": "2024-03-29T15:57:27.915Z",
+          "hashtags": "new foto"
+        }
+      ],
+      "hashtags": "nuova foto",
+      "creationData": "2024-03-29T14:50:44.814Z",
+      "modifyDate": null
+    }
+  ]
+}
